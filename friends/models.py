@@ -23,8 +23,8 @@ if "notification" in settings.INSTALLED_APPS:
 else:
     notification = None
 
-if "emailconfirmation" in settings.INSTALLED_APPS:
-    from emailconfirmation.models import EmailAddress
+if "allauth.account" in settings.INSTALLED_APPS:
+    from allauth.account.models import EmailAddress
 else:
     EmailAddress = None
 
